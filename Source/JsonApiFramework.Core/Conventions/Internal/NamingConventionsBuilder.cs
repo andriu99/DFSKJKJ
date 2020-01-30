@@ -15,12 +15,6 @@ namespace JsonApiFramework.Conventions.Internal
 
         // PUBLIC METHODS ///////////////////////////////////////////////////
         #region INamingConventionsBuilder Implementation
-        public INamingConventionsBuilder AddCamelCaseNamingConvention()
-        {
-            this.NamingConventions.Add(new CamelCaseNamingConvention());
-            return this;
-        }
-
         public INamingConventionsBuilder AddLowerCaseNamingConvention()
         {
             this.NamingConventions.Add(new LowerCaseNamingConvention());
